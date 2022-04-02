@@ -8,7 +8,8 @@ function Seed() {
   useEffect(() => {
     fetch(`${BACKEND}api/holidays/seed`)
       .then((response) => response.json())
-      .then((data) => setSeed(data));
+      .then((data) => {setSeed(data)
+                      console.log(data)});
   }, []);
 
   return (

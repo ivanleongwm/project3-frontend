@@ -6,7 +6,7 @@ function Seed() {
   const [seed, setSeed] = useState([]);
 
   useEffect(() => {
-    fetch(`${BACKEND}/api/holidays/seed`)
+    fetch(`${BACKEND}api/holidays/seed`)
       .then((response) => response.json())
       .then((data) => setSeed(data));
   }, []);

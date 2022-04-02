@@ -1,10 +1,11 @@
+import Create from "./pages/Create";
+import HolidayList from "./pages/HolidayList";
 import Seed from "./pages/Seed";
-import Create from './pages/Create'
 
 function App() {
   return (
     <div className="App">
-      <Create /> 
+      <HolidayList /> 
     </div>
   );
 }
